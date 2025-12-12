@@ -56,10 +56,10 @@ spec:
   ingressClassName: alb
   rules:
   - host: "app1.eshwar.fun"
-  - http:
+    http:
       paths:
-      - path: "/"
-        pathType: Prefix
+      - pathType: Prefix
+        path: "/"
         backend:
           service:
             name: app-1
